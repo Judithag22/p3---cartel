@@ -1,76 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>p3 cartel</title>
+    
+
+<style>       
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;700;900&display=swap');
+
+    :root {
+    --azul: #62C6D7;
+    --negro: #050505;
+    --rosa: #F04D91;
+    --blanco: #F8F6EE;
+}
+body {
+    margin: 0;
+    background-color: var(--azul);
+    color: var(--negro);
+    font-family: 'Barlow Condensed', sans-serif;
+}
+     header {
+            text-align: center;
+            padding: 30px 15px;
+
+}            
+
+h1 {
+            font-family: 'Anton', sans-serif;
+            font-size: 48px;
+            text-transform: uppercase;
+        }
+ h2, h3 {
+            font-family: 'Anton', sans-serif;
+        }
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px auto;
+    max-width: 550px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px 8px;
+}
+
+li {
+    display: inline;
+    font-family: 'Anton', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+}
+        
+li::after {
+    content: " ▶ ";
+    color: var(--rosa);
+}
+ h4 {
+            text-align: center;
+            color: var(--rosa);
+            font-family: 'Anton', sans-serif;
+            font-size: 28px;
+        }                
+ footer {
+            text-align: center;
+            padding: 20px;
+        }
+    header,
+main,
+section,
+hgroup,
+h4,
+footer {
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: inline;
+}
+.aviso {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}               
+    </style>
+   
 </head>
+
 <body>
-    <header>
+    
         <hgroup>
             <h1>O Son do Camiño</h1>
             <h2>18, 19 y 20 junio 2026</h2>
             <h3>Monte do Gozo, Santiago de Compostela</h3>
+        
         </hgroup>
     </header>
     <main>
         <section>
             
-            <ul>
-                <li>Linkin Park</li>
-                <li>Katy Perry</li>
-                <li>Dani Martín</li>
-                <li>Lola Índigo</li>
-                <li>Biffy Clyro</li>
-                <li>Afrojack</li>
-                <li>Guitarricadelafuente</li>
-                <li>Sen Senra</li>
-                <li>Hoobastank</li>
-                <li>Carlos Ares</li>
-                <li>Sexy Zebras</li>
-                <li>Leire Martínez</li>
-                <li>Niña Polaca</li>
-                <li>MVRK</li>
-                <li>The Bloody Beetroots (dj set)</li>
-                <li>Barry B</li>
-                <li>Carlangas</li>
-                <li>D. Valentino</li>
-                <li>Ortiga</li>
-                <li>The Molotovs</li>
-                <li>Corella</li>
-                <li>Michenlo</li>
-                <li>Sarria</li>
-                <li>Habló Pablo</li>
-            </ul>
-        </section><h4>Son Electro Repsol</h4><section>
-        
-        
-            <ul>
-                <li>Aida Blanco</li>
-                <li>Bárbara Lago</li>
-                <li>Bego Martín</li>
-                <li>Carlita</li>
-                <li>Caste</li>
-                <li>DJ GigolaHéctor Oaks</li>
-                <liHéctor Oaks></li>
-                <li>Honeyluv</li>
-                <li>Hoonine</li>
-                <li>Jimi Jules</li>
-                <li>MCR-T</li>
-                <li>Paramida</li>
-                <li>Patrick Mason (house set)</li>
-                <li>B2B Haai</li>
-                <li>Perel</li>
-                <li>Supergloss</li>
-                <li>Toutsanders</li>
-                <li>Viviana Casanova</li>
+            <ul class="fila">
+    <li>Linkin Park</li>
+    <li>Katy Perry</li>
+</ul>
 
+<ul class="fila">
+    <li>Dani Martín</li>
+    <li>Lola Índigo</li>
+    <li>Biffy Clyro</li>
+</ul>
+
+<ul class="fila">
+    <li>Afrojack</li>
+    <li>Guitarricadelafuente</li>
+    <li>Sen Senra</li>
+</ul>
+
+<ul class="fila">
+    <li>Hoobastank</li>
+    <li>Carlos Ares</li>
+    <li>Sexy Zebras</li>
+    <li>Leire Martínez</li>
+</ul>
+
+<ul class="fila">
+    <li>Niña Polaca</li>
+    <li>MVRK</li>
+    <li>The Bloody Beetroots (DJ Set)</li>
+    <li>Barry B</li>
+</ul>
+
+<ul class="fila">
+    <li>Carlangas</li>
+    <li>D. Valentino</li>
+    <li>Ortiga</li>
+    <li>The Molotovs</li>
+</ul>
+
+<ul class="fila">
+    <li>Corella</li>
+    <li>Michenlo</li>
+    <li>Sarria</li>
+    <li>Habló Pablo</li>
+</ul>
+        <h4>Son Electro Repsol</h4>
+        </section>
+        <ul class="fila"></ul>
+            
+                
+    <li>Aida Blanco</li>
+    <li>Bárbara Lago</li>
+    <li>Bego Martín</li>
+</ul>
+
+<ul class="fila">
+    <li>Carlita</li>
+    <li>Caste</li>
+    <li>DJ Gigola</li>
+    <li>Héctor Oaks</li>
+</ul>
+
+<ul class="fila">
+    <li>Honeyluv</li>
+    <li>Hoonine</li>
+    <li>Jimi Jules</li>
+    <li>MCR-T</li>
+</ul>
+
+<ul class="fila">
+    <li>Paramida</li>
+    <li>Patrick Mason</li>
+    <li>Séb B2B Haai</li>
+</ul>
+
+<ul class="fila">
+    <li>Perel</li>
+    <li>Supergloss</li>
+    <li>Toutsanders</li>
+</ul>
+
+<ul class="fila">
+    <li>Viviana Casanova</li>
+</ul>
+                
              </ul>
-        </section> <h5>Más artistas por anunciar</h5></section>
+        
+    </section>
 
-       
+<p class="aviso">Más artistas por anunciar</p>
+
+<section>
+
+        
     </main>
     <footer></footer>
-    <a>https://osondocamino.es/cartel-o-son-do-camino-2026/<a></a>
-                
+    <a href="https://osondocamino.es/cartel-o-son-do-camino-2026/">
+    Web oficial del festival
+</a>
+<footer></footer>
+</body>
+</html>            
            
